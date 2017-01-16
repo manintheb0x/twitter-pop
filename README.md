@@ -1,6 +1,19 @@
 # twitter-pop
 
-An easy to use tool that will:  
+In order to use this tool you must create a Twitter app at https://apps.twitter.com/ 
+
+Once you have created the app, you will have access to its specificed oAuthConsumerKey, oAuthConsumerSecret, accessToken and accessTokenSecret located on the 'Keys and Access Tokens' tab within your apps.twitter account.
+
+Store your keys in App.config
+    
+    <appSettings>
+        <add key="oAuthConsumerKey" value="xxxxxxxxxxxxxxxxxxxxxxxxx"/>
+        <add key="oAuthConsumerSecret" value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+        <add key="accessToken" value="xxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+        <add key="accessTokenSecret" value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+    </appSettings>
+
+twitter-pop is an easy to use tool that will:  
 
 1.) Parse text input into a string array, each element being <= 140 characters, taking whole words into consideration (ie. will not split a whole word).
 
